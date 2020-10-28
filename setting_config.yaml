@@ -1,0 +1,23 @@
+
+# 注意引号
+# 问卷链接
+url: "https://www.wjx.top/m/94813397.aspx"
+#url: "https://www.wjx.top/m/95360390.aspx"
+# 问卷开放时间，前一分钟运行程序即可
+target_time: "2020-10-22 21:31:00"
+
+users:
+  - name: "顾东洲"
+    phone: "18817618823"
+    id: "20721985"
+#  - name: "王二狗"
+#    phone: "18817618823"
+#    id: "20721985"
+#  - name: "张母牛"
+#    phone: "18817618823"
+#    id: "20721985"
+
+user-agent: 'mozilla/5.0 (iphone; cpu iphone os 5_1_1 like mac os x) applewebkit/534.46 (khtml, like gecko) mobile/9b206 micromessenger/5.0'
+cookies: 'HMACCOUNT_BFESS=62EE4667F6BD0513; Path=/; Domain=hm.baidu.com; Expires=Mon, 18 Jan 2038 00:00:00 GMT; Secure; SameSite=None
+
+'
