@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3084c62c-d859-4417-ab40-7dec166e3f8c" name="Default Changelist" comment="" />
+    <list default="true" id="3084c62c-d859-4417-ab40-7dec166e3f8c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setting_config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/setting_config.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1jEXDYxioxl9kQhhH3bxaFH0Abs" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -15,6 +24,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../WJX-PC" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -23,6 +33,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -71,6 +82,8 @@
       <workItem from="1603719486054" duration="617000" />
       <workItem from="1603815587448" duration="593000" />
       <workItem from="1603846392731" duration="7490000" />
+      <workItem from="1603891079414" duration="1105000" />
+      <workItem from="1603893878969" duration="2749000" />
     </task>
     <servers />
   </component>
@@ -86,33 +99,41 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="656" y="111" key="#main/0.0.1920.1040@0.0.1920.1040" timestamp="1603370130689" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1603846986423">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1603891178947">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1603846986423" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1603854412602">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1603891178947" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1603896629768">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603854412602" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1603854412602">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603896629768" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1603896629768">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603854412602" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1603854412602">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603896629768" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1603896629768">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603854412602" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1603854412602">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603896629768" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1603896629768">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603854412602" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603896629768" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1603891152015">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1603891152015" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603896396084">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603896396084" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1603849362524">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1603849362524" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/WJX_phone$main.coverage" NAME="main Coverage Results" MODIFIED="1603853280197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/WJX_phone$main.coverage" NAME="main Coverage Results" MODIFIED="1603896295710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/WJX$main.coverage" NAME="main Coverage Results" MODIFIED="1603642574639" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

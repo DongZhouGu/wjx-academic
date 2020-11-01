@@ -1,10 +1,9 @@
-
 # 注意引号
 # 问卷链接
-url: "https://www.wjx.top/m/94813397.aspx"
-#url: "https://www.wjx.top/m/95360390.aspx"
+url: "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx8fe84c5d52db247a&redirect_uri=https%3a%2f%2fwww.wjx.cn%2fhtml%2fgetwxcode.aspx%3fredirect_uri%3dhttps%253a%252f%252fwww.wjx.top%252fm%252f95479685.aspx&response_type=code&scope=snsapi_userinfo&state=sojump&uin=Mjg2MDQ5NjYyOA%3D%3D&key=d5c10c2228f38ea144a0e652cfc2d631ac83e1b66023478fee68879d3d2cf1c1d7b9e3914743c32b134e954d77bbd6d80ee4774634b47c775cfc4a454bfad3e46dfe8f502b9fc00be12ae6e314398392dc1e821e1d2a257923cd41de836eeec42e818e7b2aff1e236f30b08bf4dbcd5ea6d521b941b619fe9209b9f16094042d&version=6300002f&pass_ticket=%2F%2FdXBqHClYZ6X8H1wcrXjXiM9nHxpzoWkK%2FULe%2BnJwQ2TCQ7IaV2fsjL6hR7RsB5"
+wjx_id: "95479685"
 # 问卷开放时间，前一分钟运行程序即可
-target_time: "2020-10-22 21:31:00"
+target_time: "2020-10-28 21:58:00"
 
 users:
   - name: "顾东洲"
@@ -18,6 +17,3 @@ users:
 #    id: "20721985"
 
 user-agent: 'mozilla/5.0 (iphone; cpu iphone os 5_1_1 like mac os x) applewebkit/534.46 (khtml, like gecko) mobile/9b206 micromessenger/5.0'
-cookies: 'HMACCOUNT_BFESS=62EE4667F6BD0513; Path=/; Domain=hm.baidu.com; Expires=Mon, 18 Jan 2038 00:00:00 GMT; Secure; SameSite=None
-
-'
