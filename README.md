@@ -1,6 +1,6 @@
 以下为本程序的使用说明，
 
-图盘有问题去这个链接看 https://blog.csdn.net/GuDoerr/article/details/109632917
+图片显示有问题去这个链接看 https://blog.csdn.net/GuDoerr/article/details/109632917
 
 ## 第一步：下载浏览器驱动
 
