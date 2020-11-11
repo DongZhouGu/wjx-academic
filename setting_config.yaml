@@ -1,9 +1,14 @@
 # 此程序为上海大学抢学术章使用，勿传播，=-v==  问卷开放前一分钟运行程序即可
-# url:授权信息，请提前20分钟内(太早拿授权会失效)使用软件Fidder抓包微信授权
-url: "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx8fe84c5d52db247a&redirect_uri=https%3a%2f%2fwww.wjx.cn%2fm%2f97030224.aspx&response_type=code&scope=snsapi_userinfo&state=sojump&uin=Mjg2MDQ5NjYyOA%3D%3D&key=2a712e5e75c8994816d412512196183fc5aa2cee19572e368136f1a951bc10ce512fe1146fe5b26ccd1c5fb8e505e80da08ce49110f9d09e322a0c7e4a5e731ee515ce43382aefe3f092257325f0e162fa14274e6e83db4841b15bd4af7d28b8902fa73d04982db22831936efda64584b8341f53bc25a966de39ce5ef5a50b1b&version=6300002f&pass_ticket=%2FitOV3tHZpVYO1emXdDh1nU2RxprPfWCqLwpEOaLbk7oNZx9MRz9DqA2JsUnP2Ln"
+# 使用须知：先下载自己电脑上Chrome浏览器对应版本的驱动(http://npm.taobao.org/mirrors/chromedriver/),并放在该程序目录下
+# 每次使用更改下面三个参数即可，第一次使用更改一下用户信息
+
+# url:授权信息，请提前20分钟内(太早拿授权会失效)使用软件Fidder抓包微信授权；抓包专用链接 https://www.wjx.cn/m/97030224.aspx，在电脑版微信打开此链接，别填写提交了！否则失效
 # wjx_id:问卷链接网址中的8位数字
-wjx_id: "96730351"
 # target_time:问卷开放时间——这里填写规定的问卷开放时间
+
+
+url: "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx8fe84c5d52db247a&redirect_uri=https%3a%2f%2fwww.wjx.cn%2fm%2f97030224.aspx&response_type=code&scope=snsapi_userinfo&state=sojump&uin=Mjg2MDQ5NjYyOA%3D%3D&key=2a712e5e75c8994816d412512196183fc5aa2cee19572e368136f1a951bc10ce512fe1146fe5b26ccd1c5fb8e505e80da08ce49110f9d09e322a0c7e4a5e731ee515ce43382aefe3f092257325f0e162fa14274e6e83db4841b15bd4af7d28b8902fa73d04982db22831936efda64584b8341f53bc25a966de39ce5ef5a50b1b&version=6300002f&pass_ticket=%2FitOV3tHZpVYO1emXdDh1nU2RxprPfWCqLwpEOaLbk7oNZx9MRz9DqA2JsUnP2Ln"
+wjx_id: "96730351"
 target_time: "2020-11-11 19:00:00"
 
 users:
