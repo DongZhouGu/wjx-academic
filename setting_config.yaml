@@ -1,9 +1,10 @@
-# 注意引号
-# 问卷链接
-url: "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx8fe84c5d52db247a&redirect_uri=https%3a%2f%2fwww.wjx.cn%2fhtml%2fgetwxcode.aspx%3fredirect_uri%3dhttps%253a%252f%252fwww.wjx.top%252fm%252f95479685.aspx&response_type=code&scope=snsapi_userinfo&state=sojump&uin=Mjg2MDQ5NjYyOA%3D%3D&key=d5c10c2228f38ea144a0e652cfc2d631ac83e1b66023478fee68879d3d2cf1c1d7b9e3914743c32b134e954d77bbd6d80ee4774634b47c775cfc4a454bfad3e46dfe8f502b9fc00be12ae6e314398392dc1e821e1d2a257923cd41de836eeec42e818e7b2aff1e236f30b08bf4dbcd5ea6d521b941b619fe9209b9f16094042d&version=6300002f&pass_ticket=%2F%2FdXBqHClYZ6X8H1wcrXjXiM9nHxpzoWkK%2FULe%2BnJwQ2TCQ7IaV2fsjL6hR7RsB5"
-wjx_id: "95479685"
-# 问卷开放时间，前一分钟运行程序即可
-target_time: "2020-10-28 21:58:00"
+# 此程序为上海大学抢学术章使用，勿传播，=-v==  问卷开放前一分钟运行程序即可
+# url:授权信息，请提前20分钟内(太早拿授权会失效)使用软件Fidder抓包微信授权
+url: "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx8fe84c5d52db247a&redirect_uri=https%3a%2f%2fwww.wjx.cn%2fm%2f97030224.aspx&response_type=code&scope=snsapi_userinfo&state=sojump&uin=Mjg2MDQ5NjYyOA%3D%3D&key=2a712e5e75c8994816d412512196183fc5aa2cee19572e368136f1a951bc10ce512fe1146fe5b26ccd1c5fb8e505e80da08ce49110f9d09e322a0c7e4a5e731ee515ce43382aefe3f092257325f0e162fa14274e6e83db4841b15bd4af7d28b8902fa73d04982db22831936efda64584b8341f53bc25a966de39ce5ef5a50b1b&version=6300002f&pass_ticket=%2FitOV3tHZpVYO1emXdDh1nU2RxprPfWCqLwpEOaLbk7oNZx9MRz9DqA2JsUnP2Ln"
+# wjx_id:问卷链接网址中的8位数字
+wjx_id: "96730351"
+# target_time:问卷开放时间——这里填写规定的问卷开放时间
+target_time: "2020-11-11 19:00:00"
 
 users:
   - name: "顾东洲"
