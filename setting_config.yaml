@@ -12,16 +12,8 @@ wjx_id: "97888234"
 target_time: "2020-11-19 19:05:00"
 
 users:
-  - name: "顾东洲"
+  - name: "张母牛"
     phone: "18817618823"
     id: "20721985"
-    card_id: "341226199908103718"
-
-  - name: "王章良"
-    phone: "15691612661"
-    id: "20721988"
-#  - name: "张母牛"
-#    phone: "18817618823"
-#    id: "20721985"
 
 user-agent: 'mozilla/5.0 (iphone; cpu iphone os 5_1_1 like mac os x) applewebkit/534.46 (khtml, like gecko) mobile/9b206 micromessenger/5.0'
