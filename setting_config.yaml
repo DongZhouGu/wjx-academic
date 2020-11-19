@@ -7,17 +7,19 @@
 # target_time:问卷开放时间——这里填写规定的问卷开放时间
 
 
-url: "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx8fe84c5d52db247a&redirect_uri=https%3a%2f%2fwww.wjx.cn%2fm%2f97030224.aspx&response_type=code&scope=snsapi_userinfo&state=sojump&uin=Mjg2MDQ5NjYyOA%3D%3D&key=2a712e5e75c8994816d412512196183fc5aa2cee19572e368136f1a951bc10ce512fe1146fe5b26ccd1c5fb8e505e80da08ce49110f9d09e322a0c7e4a5e731ee515ce43382aefe3f092257325f0e162fa14274e6e83db4841b15bd4af7d28b8902fa73d04982db22831936efda64584b8341f53bc25a966de39ce5ef5a50b1b&version=6300002f&pass_ticket=%2FitOV3tHZpVYO1emXdDh1nU2RxprPfWCqLwpEOaLbk7oNZx9MRz9DqA2JsUnP2Ln"
-wjx_id: "96730351"
-target_time: "2020-11-11 19:00:00"
+url: "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx8fe84c5d52db247a&redirect_uri=https%3a%2f%2fwww.wjx.cn%2fm%2f97030224.aspx&response_type=code&scope=snsapi_userinfo&state=sojump&uin=Mjg2MDQ5NjYyOA%3D%3D&key=2a712e5e75c89948eac0a62212dab2d7859a79bddad6a4d54dbf82e58bec1654ad5ab6c723a508abdb004bec72507d5bfc21289c5afc6050acd6debd5353e8be28c431cb39719ee594ad10989939417b61cd56dc4497ad175789769e7250d6b56f0c0cc08e4bbf79dfc2e5e6ecf2102875f98daf53f440f5b3c3bb8db1455f4c&version=6300002f&pass_ticket=hOSulHWn3pA%2FWUwyHivlC3%2FPu4KuPOQ4GdY62HCuSBXjJzUNGli0Lkh2vkbMv3kM"
+wjx_id: "97888234"
+target_time: "2020-11-19 19:05:00"
 
 users:
   - name: "顾东洲"
     phone: "18817618823"
     id: "20721985"
-#  - name: "王二狗"
-#    phone: "18817618823"
-#    id: "20721985"
+    card_id: "341226199908103718"
+
+  - name: "王章良"
+    phone: "15691612661"
+    id: "20721988"
 #  - name: "张母牛"
 #    phone: "18817618823"
 #    id: "20721985"

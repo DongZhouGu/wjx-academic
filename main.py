@@ -10,6 +10,7 @@ import time
 from time import ctime, mktime
 import yaml
 
+
 class submit():
     def __init__(self, browser, questions):
         self.browser = browser
@@ -18,16 +19,21 @@ class submit():
     def re_random(self, num, div_string):
         if "姓名" in div_string or "名字" in div_string:
             self.submit_text(num, info["name"])
-        elif "联系方式" in div_string or "手机" in div_string :
+        elif "联系方式" in div_string or "手机" in div_string or "电话" in div_string:
             self.submit_text(num, info["phone"])
         elif "学号" in div_string:
             self.submit_text(num, info["id"])
+        elif "身份证" in div_string:
+            self.submit_text(num, info["card_id"])
         elif "专业" in div_string:
             self.submit_text(num, "自动化")
         elif "年级" in div_string:
             self.submit_choice(num)
         elif "性别" in div_string:
             self.submit_choice(num)
+        else:
+            if (self.is_choice(num) == False):
+                self.submit_text(num, "1")
 
     def post(self, info):
         for i in range(len(self.questions)):
@@ -49,6 +55,14 @@ class submit():
         text_area.clear()
         text_area.send_keys(text)
 
+    def is_choice(self, num):
+        answers = self.questions[num].find_elements_by_class_name('ui-radio')
+        if answers == None:
+            return False
+        else:
+            answers[0].click()
+            return True
+
 
 # 加载yaml
 def load_config(config_path):
@@ -60,8 +74,8 @@ if __name__ == "__main__":
     config = load_config("setting_config.yaml")
     url = config['url']
     index = url.find('.aspx&response_type')
-    index2=url.find("state=sojump")
-    url = url[:index - 8] + config['wjx_id'] + url[index:index2+12]+"&connect_redirect=1"+url[index2+12:]
+    index2 = url.find("state=sojump")
+    url = url[:index - 8] + config['wjx_id'] + url[index:index2 + 12] + "&connect_redirect=1" + url[index2 + 12:]
     target_time = config['target_time']
     useragent = config['user-agent']
     chrome_options = Options()
