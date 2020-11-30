@@ -21,7 +21,6 @@ async def submit_choice(questions, num):
     answers = await questions[num].querySelectorAll('.ui-radio')
     for answer in answers:
         text = await (await answer.getProperty('textContent')).jsonValue()
-        print(text)
         if '20' in text or '男' in text or '研一' in text:
             return await answer.click()
 
@@ -44,7 +43,6 @@ async def submit(page, questions, info):
     for num in range(len(questions)):
         element = await questions[num].querySelector(f'#div{num + 1} > div.field-label')
         div_string = await (await element.getProperty('textContent')).jsonValue()
-        print(div_string)
         if "姓名" in div_string or "名字" in div_string:
             await submit_text(questions, num, info["name"])
         elif "联系方式" in div_string or "手机" in div_string or "电话" in div_string:

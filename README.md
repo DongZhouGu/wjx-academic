@@ -47,8 +47,20 @@ __chromium_revision__ = '818858'
 
 ### 开始使用
 
-第一次运行，会下载chromium，如果慢的话百度 `puppeteer下载chromium慢`
+第一次运行，会下载chromium，如果慢的话百度 `pyppeteer下载chromium慢`
 
-其他的设置和之前一样，在 `setting_config_yaml` 里设置
+也可以下载我下载好的 放在下面的路径，`local-chromium` 文件夹请自己新建
+
+![image-20201130175842517](E:\Typora图片\image-20201130175842517.png)
+
+
+
+> 链接：https://pan.baidu.com/s/1G5hZITDlhDpUULIVVWODSw 
+> 提取码：cyer 
+> 复制这段内容后打开百度网盘手机App，操作更方便哦
+
+
+
+其他的设置和之前一样，在 `setting_config_yaml` 里设置，同样需要抓包软件，之前的chromdriver不需要了
 
 详情见 `setting_config_yaml`中的解释
