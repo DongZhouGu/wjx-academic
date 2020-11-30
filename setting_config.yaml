@@ -3,17 +3,23 @@
 # 每次使用更改下面三个参数即可，第一次使用更改一下用户信息
 
 # url:授权信息，请提前20分钟内(太早拿授权会失效)使用软件Fidder抓包微信授权；抓包专用链接 https://www.wjx.cn/m/97030224.aspx，在电脑版微信打开此链接，别填写提交了！否则失效
-# wjx_id:问卷链接网址中的8位数字
+# wjx_id:问卷链接 注意引号内不要有空格
 # target_time:问卷开放时间——这里填写规定的问卷开放时间
 
-
-url: "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx8fe84c5d52db247a&redirect_uri=https%3a%2f%2fwww.wjx.cn%2fm%2f97030224.aspx&response_type=code&scope=snsapi_userinfo&state=sojump&uin=Mjg2MDQ5NjYyOA%3D%3D&key=2a712e5e75c89948eac0a62212dab2d7859a79bddad6a4d54dbf82e58bec1654ad5ab6c723a508abdb004bec72507d5bfc21289c5afc6050acd6debd5353e8be28c431cb39719ee594ad10989939417b61cd56dc4497ad175789769e7250d6b56f0c0cc08e4bbf79dfc2e5e6ecf2102875f98daf53f440f5b3c3bb8db1455f4c&version=6300002f&pass_ticket=hOSulHWn3pA%2FWUwyHivlC3%2FPu4KuPOQ4GdY62HCuSBXjJzUNGli0Lkh2vkbMv3kM"
-wjx_id: "97888234"
-target_time: "2020-11-19 19:05:00"
+need_weixin: "false"
+url: "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx8fe84c5d52db247a&redirect_uri=https%3a%2f%2fwww.wjx.cn%2fm%2f97030224.aspx&response_type=code&scope=snsapi_userinfo&state=sojump&uin=Mjg2MDQ5NjYyOA%3D%3D&key=9af1848db9e82851828f5e74205a0dda5feb1a3c831af1135d427fed73a980949fb3c6b2702739e736522519cfee4d5f3edc6f124956f98fc1fb2d8e62f2bde22fe52473ffde5c60a31085936e603adae682ec392cfc22e55d597682fec52bba6900c26ac2b81b911a33ff84bfb6f0c611cdb3af88c238ef0577383f082ef0d5&version=6300002f&pass_ticket=0jHKqxqB%2FFtW0CPEtiFIAlzg7Scf9rPRxbMqKM1ppumumV0eRHb3ydRoUBpSb4lC"
+wjx_id: "https://www.wjx.top/jq/99236678.aspx"
+target_time: "2020-11-29 19:00:00"
 
 users:
   - name: "张母牛"
-    phone: "18817618823"
-    id: "20721985"
+    phone: "xxxxxxxx"
+    id: "xxxxxxxx"
+    card_id: "xxxxxxxxxxxx"
+    major: "xxxx"
+
+#  - name: "王二狗"
+#    phone: "xxxxx"
+#    id: "xxxxx"
 
 user-agent: 'mozilla/5.0 (iphone; cpu iphone os 5_1_1 like mac os x) applewebkit/534.46 (khtml, like gecko) mobile/9b206 micromessenger/5.0'
