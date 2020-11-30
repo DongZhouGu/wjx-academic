@@ -5,6 +5,7 @@
 # wjx_id:问卷链接 注意引号内不要有空格
 # target_time:问卷开放时间——这里填写规定的问卷开放时间
 
+
 need_weixin: "true"
 url: "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx8fe84c5d52db247a&redirect_uri=https%3a%2f%2fwww.wjx.cn%2fm%2f97030224.aspx&response_type=code&scope=snsapi_userinfo&state=sojump&uin=Mjg2MDQ5NjYyOA%3D%3D&key=67d2eeba5129b64434c6191919d359ca2c410fedd182995f55f9ab48d03ef91c4934f05e64ddf5cde74d88d8cfe42a41aa1182d47a7412ff23c7f966138f21596c06b51eb76f0dbd76b48455450f2b10868a3c8fc23597a715b57e618f9c30398bf918e28eb9e3d8e8ebd6cfc868a074809d0de246c061adad6a6d7f0f3267f2&version=6300002f&pass_ticket=N57nejXsGtAYwUcApCrn1%2BKbF%2F6ipDcI7yEwtRES%2FO4F0PghOj4QdW77FuTdiG9w"
 wjx_id: "https://www.wjx.top/jq/99236678.aspx"
@@ -17,8 +18,10 @@ users:
     card_id: "xxxxxxxxxxxxxxxx"
     major: "自动化"
 
-#  - name: "张母牛"
-#    phone: "18817618823"
-#    id: "20721985"
+#  - name: "王二狗"
+#    phone: "xxxxxxx"
+#    id: "xxxxxx"
+#    card_id: "xxxxxxxxxxxxxxxx"
+#    major: "自动化"
 
 user-agent: 'mozilla/5.0 (iphone; cpu iphone os 5_1_1 like mac os x) applewebkit/534.46 (khtml, like gecko) mobile/9b206 micromessenger/5.0'
