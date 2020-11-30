@@ -31,7 +31,9 @@
 python3 -m pip install pyppeteer -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
-修改下图所示的
+也可以直接在 Pycharm 中安装此包
+
+安装包完成后，接着，修改下图所示的
 
 ![image-20201130160506924](https://gitee.com/ma_tung_zhou/imageuse1/raw/master/imgg/20201130161357.png)
 
@@ -49,14 +51,14 @@ __chromium_revision__ = '818858'
 
 第一次运行，会下载chromium，如果慢的话百度 `pyppeteer下载chromium慢`
 
-也可以下载我下载好的 放在下面的路径，`local-chromium` 文件夹请自己新建
+也可以下载我下载好的 放在下面的路径，`local-chromium` 文件夹没有的话请自己新建
 
 ![image-20201130175842517](https://gitee.com/ma_tung_zhou/imageuse1/raw/master/imgg/20201130180242.png)
 
 
 
-> 链接：https://pan.baidu.com/s/1G5hZITDlhDpUULIVVWODSw 
-> 提取码：cyer 
+> 链接：https://pan.baidu.com/s/1SAkLTAnOjwo1Eg9_oIJ6fQ 
+> 提取码：s64h 
 > 复制这段内容后打开百度网盘手机App，操作更方便哦
 
 
