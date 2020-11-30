@@ -51,7 +51,7 @@ __chromium_revision__ = '818858'
 
 也可以下载我下载好的 放在下面的路径，`local-chromium` 文件夹请自己新建
 
-![image-20201130175842517](E:\Typora图片\image-20201130175842517.png)
+![image-20201130175842517](https://gitee.com/ma_tung_zhou/imageuse1/raw/master/imgg/20201130180242.png)
 
 
 
