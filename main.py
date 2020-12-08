@@ -118,10 +118,11 @@ if __name__ == '__main__':
         url = config['url']
         index = url.find('.aspx&response_type')
         index2 = url.find("state=sojump")
-        url = url[:index - 8] + config['wjx_id'][-13:-5] + url[index:index2 + 12] + "&connect_redirect=1" + url[
+        url = url[:index - 8] + ''.join(list(filter(str.isdigit, config['wjx_id'])))  + url[index:index2 + 12] + "&connect_redirect=1" + url[
                                                                                                             index2 + 12:]
     if (flag == "false"):
-        url = "https://www.wjx.cn/m/" + config['wjx_id'][-13:]
+        url = "https://www.wjx.cn/m/" + ''.join(list(filter(str.isdigit, config['wjx_id']))) + '.aspx'
+        print(url)
 
     useragent = config['user-agent']
 
