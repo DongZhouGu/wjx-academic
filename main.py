@@ -9,7 +9,7 @@ from pyppeteer import launch
 import time
 from time import ctime, mktime
 import yaml
-
+import os
 
 # 加载yaml
 def load_config(config_path):
@@ -64,8 +64,10 @@ async def submit(page, questions, info):
     submitb = await page.querySelector('#ctlNext')
     await submitb.click()
     time.sleep(1)
-    print(f'时间: {ctime()}==== {info["name"]}提交成功！')
-    time.sleep(10)
+    print(f'时间: {ctime()}==== {info["name"]}提交成功！查看result.png截图进行验证！')
+    time.sleep(2)
+    # 登录成功截图
+    await page.screenshot({'path': './result.png', 'quality': 100, 'fullPage': True})
 
 
 # 主函数
@@ -112,6 +114,8 @@ async def main():
 
 # 运行入口
 if __name__ == '__main__':
+    if os.path.exists("./result.png"):
+        os.remove("./result.png")
     config = load_config("setting_config.yaml")
     flag = config['need_weixin']
     if (flag == "true"):
