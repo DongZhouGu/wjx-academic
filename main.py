@@ -11,7 +11,11 @@ from time import ctime, mktime
 import yaml
 import os
 
+
 # 加载yaml
+from pyppeteer.errors import ElementHandleError
+
+
 def load_config(config_path):
     with open(config_path, encoding='utf8') as f:
         return yaml.load(f, Loader=yaml.FullLoader)
@@ -64,10 +68,11 @@ async def submit(page, questions, info):
     submitb = await page.querySelector('#ctlNext')
     await submitb.click()
     time.sleep(1)
-    print(f'时间: {ctime()}==== {info["name"]}提交成功！查看result.png截图进行验证！')
+    print(f'时间: {ctime()}==== {info["name"]}提交成功！不管是否爆红，请查看result.png截图进行验证！')
     time.sleep(2)
     # 登录成功截图
     await page.screenshot({'path': './result.png', 'quality': 100, 'fullPage': True})
+    time.sleep(2)
 
 
 # 主函数
@@ -92,19 +97,24 @@ async def main():
     for i, info in enumerate(config['users']):
         while (True):
             if (time.time() > target_time):
-                await page.goto(url)
+                await page.goto(url, {'timeout': 1000 * 60})
                 if (flag == "true"):
-                    await asyncio.wait([
-                        page.click('#btnOk'),
-                        page.waitForNavigation(),
-                    ])
-                break
+                    ok = await page.querySelector('#btnOk')
+                    if (ok != None):
+                        await asyncio.wait([
+                            ok.click(),
+                            page.waitForNavigation(),
+                        ])
+                        questions = await page.querySelectorAll('.field')
+                        if (len(questions) != 0): break
+                else:
+                    questions = await page.querySelectorAll('.field')
+                    if (len(questions) != 0): break
             else:
                 print(f'时间: {ctime()}====等待中')
                 time.sleep(1)
 
         print(f'时间: {ctime()}===={info["name"]}开始提交')
-        questions = await page.querySelectorAll('.field')
         await submit(page, questions, info)
 
     print(f'时间: {ctime()}====任务完成')
@@ -122,12 +132,12 @@ if __name__ == '__main__':
         url = config['url']
         index = url.find('.aspx&response_type')
         index2 = url.find("state=sojump")
-        url = url[:index - 8] + ''.join(list(filter(str.isdigit, config['wjx_id'])))  + url[index:index2 + 12] + "&connect_redirect=1" + url[
-                                                                                                            index2 + 12:]
+        url = url[:index - 8] + ''.join(list(filter(str.isdigit, config['wjx_id']))) + url[
+                                                                                       index:index2 + 12] + "&connect_redirect=1" + url[
+                                                                                                                                    index2 + 12:]
     if (flag == "false"):
         url = "https://www.wjx.cn/m/" + ''.join(list(filter(str.isdigit, config['wjx_id']))) + '.aspx'
-        print(url)
 
     useragent = config['user-agent']
-
     asyncio.get_event_loop().run_until_complete(main())
+   
