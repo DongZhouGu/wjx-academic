@@ -11,7 +11,6 @@ from time import ctime, mktime
 import yaml
 import os
 
-
 # 加载yaml
 from pyppeteer.errors import ElementHandleError
 
@@ -103,20 +102,22 @@ async def main():
                     if (ok != None):
                         await asyncio.wait([
                             ok.click(),
-                            page.waitForNavigation(),
+                            page.waitForNavigation({'timeout': 1000 * 60}),
                         ])
+                        await asyncio.wait([
+                            page.querySelectorAll('.field'), page.waitForNavigation({'timeout': 50000}), ])
                         questions = await page.querySelectorAll('.field')
+                        print(questions)
                         if (len(questions) != 0): break
-                else:
-                    questions = await page.querySelectorAll('.field')
-                    if (len(questions) != 0): break
             else:
-                print(f'时间: {ctime()}====等待中')
-                time.sleep(1)
+                questions = await page.querySelectorAll('.field')
+                if (len(questions) != 0): break
+        else:
+            print(f'时间: {ctime()}====等待中')
+            time.sleep(1)
 
-        print(f'时间: {ctime()}===={info["name"]}开始提交')
-        await submit(page, questions, info)
-
+    print(f'时间: {ctime()}===={info["name"]}开始提交')
+    await submit(page, questions, info)
     print(f'时间: {ctime()}====任务完成')
     # 关闭浏览器
     # await browser.close()
@@ -128,16 +129,16 @@ if __name__ == '__main__':
         os.remove("./result.png")
     config = load_config("setting_config.yaml")
     flag = config['need_weixin']
+    ind = config['wjx_id'].rfind('/')
+    ind2 = config['wjx_id'].rfind('.aspx')
     if (flag == "true"):
         url = config['url']
         index = url.find('.aspx&response_type')
         index2 = url.find("state=sojump")
-        url = url[:index - 8] + ''.join(list(filter(str.isdigit, config['wjx_id']))) + url[
-                                                                                       index:index2 + 12] + "&connect_redirect=1" + url[
-                                                                                                                                    index2 + 12:]
+        url = url[:index - 7] + config['wjx_id'][ind + 1:ind2] + url[index:index2 + 12] + "&connect_redirect=1" + url[
+                                                                                                                  index2 + 12:]
     if (flag == "false"):
-        url = "https://www.wjx.cn/m/" + ''.join(list(filter(str.isdigit, config['wjx_id']))) + '.aspx'
+        url = "https://www.wjx.cn/vm" + config['wjx_id'][ind:]
 
     useragent = config['user-agent']
     asyncio.get_event_loop().run_until_complete(main())
-   

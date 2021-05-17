@@ -7,9 +7,9 @@
 
 
 need_weixin: "true"
-url: "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx8fe84c5d52db247a&redirect_uri=https%3a%2f%2fwww.wjx.cn%2fm%2f97030224.aspx&response_type=code&scope=snsapi_userinfo&state=sojump&uin=Mjg2MDQ5NjYyOA%3D%3D&key=67d2eeba5129b64434c6191919d359ca2c410fedd182995f55f9ab48d03ef91c4934f05e64ddf5cde74d88d8cfe42a41aa1182d47a7412ff23c7f966138f21596c06b51eb76f0dbd76b48455450f2b10868a3c8fc23597a715b57e618f9c30398bf918e28eb9e3d8e8ebd6cfc868a074809d0de246c061adad6a6d7f0f3267f2&version=6300002f&pass_ticket=N57nejXsGtAYwUcApCrn1%2BKbF%2F6ipDcI7yEwtRES%2FO4F0PghOj4QdW77FuTdiG9w"
-wjx_id: "https://www.wjx.top/jq/99236678.aspx"
-target_time: "2020-11-29 19:00:00"
+url: "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx8fe84c5d52db247a&redirect_uri=https%3a%2f%2fwww.wjx.cn%2fhtml%2fgetwxcode.html%3fredirect_uri%3dhttps%253a%252f%252fwww.wjx.top%252fvm%252fmOXLpkH.aspx&response_type=code&scope=snsapi_userinfo&state=sojump&uin=Mjg2MDQ5NjYyOA%3D%3D&key=369b23a77bda9023c38601a3cee891b744e5ba3a274f361c3c5d0a2cc48e6847b495402707eecf0e652a993fa2b7079ed2e61bb4b2b779d88f6768b760c071e1e2cfaba97e893388c3ab2d1dad61ecf83c9878b04924ec5fe33f86b1c0223412dee56319978891566b3701d0e55c04e3f236ae0be1c7a6604686ff0a2d30162d&version=6302019a&pass_ticket=L3VbX72NaT54%2B5wW4zAW%2BXJt5RZImXt5JfYteABaEOAB%2Frc%2BLrZQs8d085YY30TT"
+wjx_id: "https://www.wjx.top/vj/mOXLpkH.aspx"
+target_time: "2021-05-17 12:30:00"
 
 users:
   - name: "张母牛"
@@ -24,4 +24,5 @@ users:
 #    card_id: "xxxxxxxxxxxxxxxx"
 #    major: "自动化"
 
-user-agent: 'mozilla/5.0 (iphone; cpu iphone os 5_1_1 like mac os x) applewebkit/534.46 (khtml, like gecko) mobile/9b206 micromessenger/5.0'
+user-agent: 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36 QBCore/4.0.1326.400 QQBrowser/9.0.2524.400 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2875.116 Safari/537.36 NetType/WIFI MicroMessenger/7.0.20.1781(0x6700143B) WindowsWechat(0x63010200)'
+
