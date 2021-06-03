@@ -104,17 +104,19 @@ async def main():
                             ok.click(),
                             page.waitForNavigation({'timeout': 1000 * 60}),
                         ])
+                        # await asyncio.wait([
+                        #     page.querySelectorAll('.field'), page.waitForNavigation({'timeout': 50000}), ])
                         await asyncio.wait([
-                            page.querySelectorAll('.field'), page.waitForNavigation({'timeout': 50000}), ])
+                            page.querySelectorAll('.field') ])
                         questions = await page.querySelectorAll('.field')
                         print(questions)
                         if (len(questions) != 0): break
+                else:
+                    questions = await page.querySelectorAll('.field')
+                    if (len(questions) != 0): break
             else:
-                questions = await page.querySelectorAll('.field')
-                if (len(questions) != 0): break
-        else:
-            print(f'时间: {ctime()}====等待中')
-            time.sleep(1)
+                print(f'时间: {ctime()}====等待中')
+                time.sleep(1)
 
     print(f'时间: {ctime()}===={info["name"]}开始提交')
     await submit(page, questions, info)
