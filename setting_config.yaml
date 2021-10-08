@@ -2,9 +2,8 @@
 # 每次使用更改下面三个参数即可，第一次使用更改一下用户信息
 
 # url:授权信息，请提前20分钟内(太早拿授权会失效)使用软件Fidder抓包微信授权；抓包专用链接 https://www.wjx.cn/vm/PQFtgKV.aspx，在电脑版微信打开此链接，别填写提交了！否则失效
-# wjx_id:问卷链接 注意引号内不要有空格
+# wjx_id:问卷链接 注意引号内不要有空格，可以使用此链接事先尝试：https://www.wjx.top/vj/mOXLpkH.aspx
 # target_time:问卷开放时间——这里填写规定的问卷开放时间
-
 
 need_weixin: "true"
 url: "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx8fe84c5d52db247a&redirect_uri=https%3a%2f%2fwww.wjx.cn%2fhtml%2fgetwxcode.html%3fredirect_uri%3dhttps%253a%252f%252fwww.wjx.top%252fvm%252fmOXLpkH.aspx&response_type=code&scope=snsapi_userinfo&state=sojump&uin=Mjg2MDQ5NjYyOA%3D%3D&key=369b23a77bda9023c38601a3cee891b744e5ba3a274f361c3c5d0a2cc48e6847b495402707eecf0e652a993fa2b7079ed2e61bb4b2b779d88f6768b760c071e1e2cfaba97e893388c3ab2d1dad61ecf83c9878b04924ec5fe33f86b1c0223412dee56319978891566b3701d0e55c04e3f236ae0be1c7a6604686ff0a2d30162d&version=6302019a&pass_ticket=L3VbX72NaT54%2B5wW4zAW%2BXJt5RZImXt5JfYteABaEOAB%2Frc%2BLrZQs8d085YY30TT"
@@ -15,6 +14,7 @@ users:
   - name: "张母牛"
     phone: "18817618xxx"
     id: "xxxxxxxx"
+    # 身份证card_id
     card_id: "xxxxxxxxxxxxxxxx"
     major: "自动化"
 
