@@ -69,7 +69,7 @@ __chromium_revision__ = '818858'
 
 
 
-## 下载Fiddler抓包软件
+## 附：Fiddler抓包软件
 
 https://www.telerik.com/fiddler 官网下载，也可以去垃圾网站下载快点http://www.downza.cn/soft/234727.html
 
@@ -81,7 +81,7 @@ https://www.telerik.com/fiddler 官网下载，也可以去垃圾网站下载快
 
 设置完成，下面看一下怎么抓取授权
 
-### 第三步：抓取授权信息
+### 抓取授权信息
 
 首先在电脑微信上打开 抓取授权用的连链接（不要填写该问卷，否则失效），如下，先不要点击“一键登录”
 
