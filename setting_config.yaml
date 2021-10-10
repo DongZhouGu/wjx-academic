@@ -17,6 +17,9 @@ users:
     # 身份证card_id
     card_id: "xxxxxxxxxxxxxxxx"
     major: "自动化"
+    # 20级
+    grade: "20"
+    gender: "男"
 
 #  - name: "王二狗"
 #    phone: "xxxxxxx"
